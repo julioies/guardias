@@ -16,8 +16,7 @@ class GuardiaSeeder extends Seeder
      */
     public function run(): void
     {
-        $meses = ['Septiembre', 'Octubre', 'Noviembre', 'Diciembre', 'Enero',
-                  'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+        $meses = ['marzo'];
 
         $profesores = Profesor::all();
         $horarios = Horario::all();

@@ -14,11 +14,17 @@ class ZonaSeeder extends Seeder
     public function run(): void
     {
         $zonas = [
-            ['nombre' => 'Entrada Principal'],
-            ['nombre' => 'Patio Central'],
-            ['nombre' => 'Comedor'],
-            ['nombre' => 'Pasillo de Aulas'],
-            ['nombre' => 'Gimnasio'],
+            ['nombre' => 'PB'],
+            ['nombre' => 'P1'],
+            ['nombre' => 'P2'],
+            ['nombre' => 'SUS1'],
+            ['nombre' => 'SUS2'],
+            ['nombre' => 'Z1'],
+            ['nombre' => 'Z2'],
+            ['nombre' => 'Z3'],
+            ['nombre' => 'Z4'],
+            ['nombre' => 'Z5'],
+            ['nombre' => 'SUS3'],
         ];
 
         Zona::insert($zonas);

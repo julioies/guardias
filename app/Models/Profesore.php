@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * Class Zona
+ * Class Profesore
  *
  * @property $id
  * @property $nombre
+ * @property $apellidos
+ * @property $email
  * @property $created_at
  * @property $updated_at
  *
@@ -16,7 +18,7 @@ use Illuminate\Database\Eloquent\Model;
  * @package App
  * @mixin \Illuminate\Database\Eloquent\Builder
  */
-class Zona extends Model
+class Profesore extends Model
 {
 
     protected $perPage = 20;
@@ -26,7 +28,7 @@ class Zona extends Model
      *
      * @var array<int, string>
      */
-    protected $fillable = ['nombre'];
+    protected $fillable = ['nombre', 'apellidos', 'email'];
 
 
     /**
@@ -34,7 +36,7 @@ class Zona extends Model
      */
     public function guardias()
     {
-        return $this->hasMany(\App\Models\Laravel.guardia::class, 'id', 'zona_id');
+        return $this->hasMany(\App\Models\Laravel.guardia::class, 'id', 'profesor_id');
     }
 
 }
